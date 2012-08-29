@@ -13,7 +13,7 @@ public class TestFizz {
 
 	@Test
 	public void verifyPlaysFizzWhenThreeOrContainsThree() {
-		Counter counter = new Counter();
+		Counter counter = CounterFactory.buildCounter();
 		counter.updateCount(3);
 		assertThat("Correct sound played is ",counter.play(), equalTo("Fizz"));
 	}
