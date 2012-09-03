@@ -19,7 +19,7 @@ public class TestFizz {
 	}
 	
 	@Test
-	public void verifyPlaysOnqWhenNumberIsOne() {
+	public void verifyPlaysOneWhenNumberIsOne() {
 		Counter counter = new Counter();
 		counter.updateCount(1);
 		assertThat("Correct sound played is ",counter.play(), equalTo("1"));
